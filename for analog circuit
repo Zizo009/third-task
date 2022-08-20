@@ -1,0 +1,14 @@
+int potpin=A0 ;
+int r;
+void setup()
+{
+Serial.begin(9600);
+  
+}
+
+void loop()
+{
+r = analogRead(potpin);
+  Serial.println(r);
+  delay (500);
+}
